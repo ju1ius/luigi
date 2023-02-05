@@ -1,5 +1,7 @@
 # ju1ius/luigi
 
+[![codecov](https://codecov.io/gh/ju1ius/luigi/branch/main/graph/badge.svg?token=0GN2JPV0DW)](https://codecov.io/gh/ju1ius/luigi)
+
 Need to generate PHP code? Luigi does the plumbing!
 
 ## Installation
@@ -18,7 +20,7 @@ $code = CodeBuilder::create();
 $code->raw("return [\n");
 // The `indent` method increases the indent level
 $code->indent();
-// The `write` method adds verbatim code but respects the indent level
+// The `write` does the same as `raw` but respects the indent level
 $code->write("42,\n");
 // The `writeln` method does the same as `write`, but adds a newline character after each argument.
 $code->writeln('33,', '66,');

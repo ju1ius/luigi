@@ -2,6 +2,9 @@
 
 namespace ju1ius\Luigi\Internal;
 
+/**
+ * @internal
+ */
 final class IndentStack implements \Stringable
 {
     public function __construct(
