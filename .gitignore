@@ -1,0 +1,8 @@
+/.idea
+/.vscode
+
+/tmp
+/tools/*
+
+/composer.lock
+/vendor

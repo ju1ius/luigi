@@ -1,0 +1,35 @@
+{
+  "name": "ju1ius/luigi",
+  "description": "Need to generate PHP code? Luigi does the plumbing!",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "code-builder",
+    "code-generation"
+  ],
+  "authors": [
+    {
+      "name": "ju1ius",
+      "email": "jules.bernable@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "XDEBUG_MODE=off tools/phpunit.phar",
+    "coverage": "rm -rf tmp/coverage && XDEBUG_MODE=off php -dpcov.enabled=1 tools/phpunit.phar --coverage-html=tmp/coverage"
+  },
+  "autoload": {
+    "psr-4": {
+      "ju1ius\\Luigi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ju1ius\\Luigi\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-ctype": "*"
+  },
+  "require-dev": {}
+}
