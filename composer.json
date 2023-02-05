@@ -5,7 +5,8 @@
   "license": "MIT",
   "keywords": [
     "code-builder",
-    "code-generation"
+    "code-generation",
+    "codegen"
   ],
   "authors": [
     {
@@ -30,6 +31,5 @@
   "require": {
     "php": ">=8.1",
     "ext-ctype": "*"
-  },
-  "require-dev": {}
+  }
 }
